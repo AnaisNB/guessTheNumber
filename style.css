@@ -9,7 +9,7 @@
 }
 
 .global_container {
-    background: radial-gradient(circle, rgba(67,84,170,1) 0%, rgba(154,56,76,1) 100%);
+    background: radial-gradient(circle, rgb(31, 16, 85) 0%, rgb(38, 25, 82) 50%, rgb(76, 53, 134) 100%);
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -17,8 +17,7 @@
 }
 
 .game_container {
-    background: rgb(98,74,137);
-    border: 1px solid black;
+    background: linear-gradient(23deg, rgba(39, 29, 76, 1) 0%, rgba(63, 41, 122, 1) 100%);
     max-width: 70vw;
     min-width: 40vw;
     padding: 2em;
@@ -30,11 +29,14 @@
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     margin: 10px;
+    color: white;
 }
 .intro {
     text-align: center;
+    color: white;
+    font-size: 1.6rem;
 }
 form {
     display: flex;
@@ -42,11 +44,14 @@ form {
     align-items: center;
     width: 100%;
     gap: 10px;
+    margin-top: 20px;
 }
 form input{
     width: 100%;
     text-align: center;
     border-radius: 3px;
+    padding: 10px;
+    font-size: 2rem;
 }
 form .buttons {
     width: 100%;
@@ -54,13 +59,22 @@ form .buttons {
     justify-content: center;
     gap: 10px;
 }
+
 button {
     width: 50%;
     border-radius: 3px;
+    background-color: rgb(154,205,50);
+    padding: 10px;
+    font-weight: bold;
+    font-size: 2rem;
+    cursor: pointer;
+}
+button:hover {
+    background-color:rgb(188, 231, 103);
 }
 
-
-
-
-
-
+.answer {
+    color: white;
+    font-size: 1.5rem;
+    padding: 1em;
+}
