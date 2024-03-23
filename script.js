@@ -8,7 +8,7 @@ const displayAnswer = (message) => {
 };
 
 const findTheNumber = () => {
-  const targetNumber = Math.floor(Math.random() * 101);
+  let targetNumber = Math.floor(Math.random() * 101);
   let nombreEssai = 0;
 
   const gererEnvoi = (e) => {
@@ -42,9 +42,8 @@ const findTheNumber = () => {
   resetButton.addEventListener("click", () => {
     displayAnswer("");
     nombreEssai = 0;
+    targetNumber = Math.floor(Math.random() * 101);
   });
 };
 
 findTheNumber();
-
-// essayer avec une classe dans input pour voir si ça fonctionne aussi
